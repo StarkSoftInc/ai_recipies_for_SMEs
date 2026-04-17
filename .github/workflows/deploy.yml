@@ -1,21 +1,20 @@
+@@ -1,9 +1,8 @@
+
 name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: [ "master" ] # If your branch is named 'master', change this to 'master'
+    branches: [ "master" ]
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
+@@ -15,21 +14,30 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
+
+env:
+  npm_config_yes: true # Safeguard: Auto-answers "yes" to any npm prompts
 
 jobs:
   build:
@@ -23,35 +22,30 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
-      - name: Setup Node
+
+      - name: Set up Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: 'npm'
+          # We are removing 'cache: npm' for one run to clear the "ghost" webpack files
           
       - name: Install dependencies
         run: npm install
-        
+        run: |
+          rm -rf node_modules package-lock.json
+          npm install
+
       - name: Build
         run: npm run build
-        
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-        
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    needs: build
-    runs-on: ubuntu-latest
-    name: Deploy
+@@ -45,4 +53,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v4
+No newline at end of file
