@@ -66,11 +66,11 @@ export default function App() {
             </div>
             <div className="bg-zinc-900/50 p-8 rounded-2xl border border-zinc-800 shadow-sm flex flex-col items-center text-center">
               <div className="w-16 h-16 bg-[#FF37CD]/10 text-[#FF37CD] rounded-full flex items-center justify-center mb-6">
-                <Users className="w-8 h-8" />
+                <Shield className="w-8 h-8" />
               </div>
-              <h4 className="text-xl font-bold mb-4 text-zinc-100">Facilitate Partnerships</h4>
+              <h4 className="text-xl font-bold mb-4 text-zinc-100">Compliance & Safety</h4>
               <p className="text-zinc-400 leading-relaxed">
-                Connect SMEs and introduce cutting-edge AI practices through international cooperation or innovation partnerships.
+                Equip participants with a GDPR and data security checklist to ensure AI tools are used responsibly and safely.
               </p>
             </div>
           </div>
@@ -119,19 +119,11 @@ export default function App() {
                      </div>
                    </div>
                    <div className="flex items-start gap-4">
-                     <div className="w-8 h-8 rounded-full bg-[#FF37CD]/10 text-[#FF37CD] flex items-center justify-center shrink-0 mt-1">
-                       <FileText className="w-4 h-4" />
-                     </div>
-                     <div>
-                       <strong className="block text-zinc-200 mt-1.5">Visual Workflow Cards</strong>
-                     </div>
-                   </div>
-                   <div className="flex items-start gap-4">
                      <div className="w-8 h-8 rounded-full bg-[#FBCB19]/10 text-[#FBCB19] flex items-center justify-center shrink-0 mt-1">
                        <BookOpen className="w-4 h-4" />
                      </div>
                      <div>
-                       <strong className="block text-zinc-200 mt-1.5">Materials Pack (Notion)</strong>
+                       <strong className="block text-zinc-200 mt-1.5">Materials Pack</strong>
                      </div>
                    </div>
                  </div>
@@ -151,8 +143,8 @@ export default function App() {
               <div className="absolute top-0 right-0 bg-[#FF37CD]/10 text-[#FF37CD] font-bold px-4 py-2 rounded-bl-2xl text-sm border-b border-l border-zinc-800">
                 Day 1
               </div>
-              <h4 className="text-2xl font-bold mb-2 mt-4 text-white">Front & Back Office</h4>
-              <p className="text-zinc-400 mb-8 font-medium">Revenue, Growth & Operations</p>
+              <h4 className="text-2xl font-bold mb-2 mt-4 text-white">Front Office</h4>
+              <p className="text-zinc-400 mb-8 font-medium">Revenue & Growth</p>
               
               <ul className="space-y-6">
                 <li className="flex gap-4">
@@ -176,27 +168,6 @@ export default function App() {
                     <p className="text-sm text-zinc-400 mt-1">Streamline tickets, automate responses, and handle FAQs efficiently.</p>
                   </div>
                 </li>
-                <li className="flex gap-4">
-                  <div className="w-10 h-10 rounded-full bg-zinc-950 border border-zinc-800 text-[#FF37CD] flex items-center justify-center shrink-0 font-bold">4</div>
-                  <div>
-                    <h5 className="font-bold text-zinc-100">Administrative Operations</h5>
-                    <p className="text-sm text-zinc-400 mt-1">Automate routine paperwork, scheduling, and internal comms.</p>
-                  </div>
-                </li>
-                <li className="flex gap-4">
-                  <div className="w-10 h-10 rounded-full bg-zinc-950 border border-zinc-800 text-[#FF37CD] flex items-center justify-center shrink-0 font-bold">5</div>
-                  <div>
-                    <h5 className="font-bold text-zinc-100">Financial Reporting & Analysis</h5>
-                    <p className="text-sm text-zinc-400 mt-1">Accelerate month-end closing, invoice checks, and expense tracking.</p>
-                  </div>
-                </li>
-                <li className="flex gap-4">
-                  <div className="w-10 h-10 rounded-full bg-zinc-950 border border-zinc-800 text-[#FF37CD] flex items-center justify-center shrink-0 font-bold">6</div>
-                  <div>
-                    <h5 className="font-bold text-zinc-100">Project Management</h5>
-                    <p className="text-sm text-zinc-400 mt-1">Understand workflow logic to tie tools together for scalable pipelines.</p>
-                  </div>
-                </li>
               </ul>
             </div>
 
@@ -205,39 +176,74 @@ export default function App() {
               <div className="absolute top-0 right-0 bg-[#FBCB19]/10 text-[#FBCB19] font-bold px-4 py-2 rounded-bl-2xl text-sm border-b border-l border-zinc-800">
                 Day 2
               </div>
-              <h4 className="text-2xl font-bold mb-2 mt-4 text-white">Live Hackathon & Wrap-up</h4>
-              <p className="text-zinc-400 mb-8 font-medium">Practical Application</p>
+              <h4 className="text-2xl font-bold mb-2 mt-4 text-white">Back Office</h4>
+              <p className="text-zinc-400 mb-8 font-medium">Operations & Intelligence</p>
               
               <ul className="space-y-6">
                 <li className="flex gap-4">
-                  <div className="w-10 h-10 rounded-full bg-[#fbcb19]/10 border border-[#fbcb19]/30 text-[#FBCB19] flex items-center justify-center shrink-0 font-bold">
-                    <Zap className="w-5 h-5" />
-                  </div>
+                  <div className="w-10 h-10 rounded-full bg-zinc-950 border border-zinc-800 text-[#FBCB19] flex items-center justify-center shrink-0 font-bold">4</div>
                   <div>
-                    <h5 className="font-bold text-zinc-100 text-lg">The Hackathon</h5>
-                    <p className="text-sm text-zinc-400 mt-1">A live event to build real workflows and refine them based on peer feedback.</p>
+                    <h5 className="font-bold text-zinc-100">Administrative Operations</h5>
+                    <p className="text-sm text-zinc-400 mt-1">Automate routine paperwork, scheduling, and internal comms.</p>
                   </div>
                 </li>
                 <li className="flex gap-4">
-                  <div className="w-10 h-10 rounded-full bg-zinc-950 border border-zinc-800 text-[#FBCB19] flex items-center justify-center shrink-0 font-bold">
-                    <Shield className="w-4 h-4" />
-                  </div>
+                  <div className="w-10 h-10 rounded-full bg-zinc-950 border border-zinc-800 text-[#FBCB19] flex items-center justify-center shrink-0 font-bold">5</div>
                   <div>
-                    <h5 className="font-bold text-zinc-100">GDPR & Security</h5>
-                    <p className="text-sm text-zinc-400 mt-1">Use tools without leaking sensitive client data.</p>
+                    <h5 className="font-bold text-zinc-100">Financial Reporting & Analysis</h5>
+                    <p className="text-sm text-zinc-400 mt-1">Accelerate month-end closing, invoice checks, and expense tracking.</p>
                   </div>
                 </li>
                 <li className="flex gap-4">
-                  <div className="w-10 h-10 rounded-full bg-zinc-950 border border-zinc-800 text-[#FBCB19] flex items-center justify-center shrink-0 font-bold">
-                    <TrendingUp className="w-4 h-4" />
-                  </div>
+                  <div className="w-10 h-10 rounded-full bg-zinc-950 border border-zinc-800 text-[#FBCB19] flex items-center justify-center shrink-0 font-bold">6</div>
                   <div>
-                    <h5 className="font-bold text-zinc-100">Budgeting for AI</h5>
-                    <p className="text-sm text-zinc-400 mt-1">Calculate ROI of tool subscriptions vs. hours saved.</p>
+                    <h5 className="font-bold text-zinc-100">Project Management</h5>
+                    <p className="text-sm text-zinc-400 mt-1">Understand workflow logic to tie tools together for scalable pipelines.</p>
                   </div>
                 </li>
               </ul>
             </div>
+          </div>
+
+          {/* Third Card - Wrap-up */}
+          <div className="mt-8 bg-zinc-900 p-8 rounded-2xl border border-zinc-800 shadow-sm relative overflow-hidden">
+             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="flex flex-col">
+                  <div className="flex items-center gap-3 mb-4">
+                     <div className="w-10 h-10 rounded-full bg-zinc-950 border border-zinc-800 text-[#FF37CD] flex items-center justify-center shrink-0 font-bold">
+                       <Shield className="w-5 h-5" />
+                     </div>
+                     <h5 className="font-bold text-zinc-100 text-lg">GDPR & Security</h5>
+                  </div>
+                  <p className="text-zinc-400 text-sm leading-relaxed">
+                    Use tools without leaking sensitive client data. Security Quiz.
+                  </p>
+                </div>
+                
+                <div className="flex flex-col md:border-l border-zinc-800 md:pl-8">
+                  <div className="flex items-center gap-3 mb-4">
+                     <div className="w-10 h-10 rounded-full bg-[#fbcb19]/10 border border-[#fbcb19]/30 text-[#FBCB19] flex items-center justify-center shrink-0 font-bold">
+                       <Zap className="w-5 h-5" />
+                     </div>
+                     <h5 className="font-bold text-zinc-100 text-lg">The 1-Hour Iteration</h5>
+                  </div>
+                  <p className="text-zinc-400 text-sm leading-relaxed">
+                    A live hackathon where SMEs refine one workflow they built during the day based on peer feedback.
+                  </p>
+                </div>
+
+                <div className="flex flex-col md:border-l border-zinc-800 md:pl-8">
+                  <div className="flex items-center gap-3 mb-4">
+                     <div className="w-10 h-10 rounded-full bg-zinc-950 border border-zinc-800 text-[#FF37CD] flex items-center justify-center shrink-0 font-bold">
+                       <TrendingUp className="w-5 h-5" />
+                     </div>
+                     <h5 className="font-bold text-zinc-100 text-lg">Budgeting for AI</h5>
+                  </div>
+                  <p className="text-zinc-400 text-sm leading-relaxed">
+                    Calculate ROI of tool subscriptions vs. hours saved.
+                  </p>
+                </div>
+             </div>
           </div>
         </section>
 
