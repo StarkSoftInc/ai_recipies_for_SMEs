@@ -115,7 +115,7 @@ export default function App() {
                        <FileText className="w-4 h-4" />
                      </div>
                      <div>
-                       <strong className="block text-zinc-200 mt-1.5">AI Recipes Toolkit (PDF)</strong>
+                       <strong className="block text-zinc-200 mt-1.5">AI Recipes Toolkit Platform</strong>
                      </div>
                    </div>
                    <div className="flex items-start gap-4">
@@ -225,10 +225,10 @@ export default function App() {
                      <div className="w-10 h-10 rounded-full bg-[#fbcb19]/10 border border-[#fbcb19]/30 text-[#FBCB19] flex items-center justify-center shrink-0 font-bold">
                        <Zap className="w-5 h-5" />
                      </div>
-                     <h5 className="font-bold text-zinc-100 text-lg">The 1-Hour Iteration</h5>
+                     <h5 className="font-bold text-zinc-100 text-lg">Custom AI Workflows</h5>
                   </div>
                   <p className="text-zinc-400 text-sm leading-relaxed">
-                    A live hackathon where SMEs refine one workflow they built during the day based on peer feedback.
+                    Practical, hands-on workshop developing AI-powered workflows, project management systems, and enhancing marketing & brand presence.
                   </p>
                 </div>
 
