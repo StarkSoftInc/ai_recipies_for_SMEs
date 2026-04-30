@@ -245,6 +245,20 @@ export default function App() {
                 </div>
              </div>
           </div>
+
+          {/* Post-Bootcamp Support */}
+          <div className="mt-8 bg-zinc-900/80 p-8 rounded-2xl border border-zinc-800 shadow-sm relative overflow-hidden flex flex-col md:flex-row items-center gap-8">
+            <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-[#FF37CD] to-[#FBCB19]"></div>
+            <div className="w-16 h-16 rounded-full bg-zinc-950 border border-zinc-800 text-[#FF37CD] flex items-center justify-center shrink-0">
+               <Users className="w-8 h-8 text-[#FF37CD]" />
+            </div>
+            <div>
+              <h4 className="text-2xl font-bold mb-2 text-white">Post-Bootcamp Support</h4>
+              <p className="text-zinc-400 leading-relaxed max-w-3xl">
+                Bootcamp follow-up with two-week mentoring support for participants on implementing and adopting AI solutions explored during the bootcamp.
+              </p>
+            </div>
+          </div>
         </section>
 
         {/* Why Join / Benefits */}
